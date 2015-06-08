@@ -1,4 +1,4 @@
-var System = require('es6-module-loader').System;
+System = require('systemjs');
 System.transpiler = "traceur";
 
 console.log("started");
