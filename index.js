@@ -1,11 +1,11 @@
 var System = require('es6-module-loader').System;
-System.transpiler = 'traceur';
+System.transpiler = "traceur";
 
 console.log("started");
 // loads './app.js' from the current directory
-System.import('./app.js').then(function(m) {
-    console.log("loading");
-    console.log(m);
+System.import('./app.js').then(function(module) {
+    console.log("Loaded module" + module);
+    module.app();
+}).catch(function(err) {
+    console.log(err);
 });
-
-console.log("finished");
