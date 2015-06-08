@@ -1,5 +1,7 @@
 System = require('systemjs');
-System.transpiler = "traceur";
+System.config({
+    transpiler: "babel"
+});
 
 console.log("started");
 // loads './app.js' from the current directory
