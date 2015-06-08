@@ -1,5 +1,6 @@
-var System = require('systemjs');
+var System = require('es6-module-loader').System;
 System.transpiler = 'babel';
+
 
 console.log("started");
 // loads './app.js' from the current directory
