@@ -1,6 +1,8 @@
 import React from 'react';
 import {ListView} from './ListView';
 import FluxComponent from 'flummox/component';
+//TODO: this works in the app but gt "Error: Cannot find module './mail-style.css!'" when running mocha test
+//import './mail-style.css!';
 
 export class MailView extends React.Component {
 
