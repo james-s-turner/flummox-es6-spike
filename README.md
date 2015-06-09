@@ -1,5 +1,5 @@
 # flummox-es6-spike
-A small spike for my own delictation and delight.
+A small spike for my own delectation and delight.
 
 # Disclaimer
 I've only developed it on OSX and run against latest chrome.
