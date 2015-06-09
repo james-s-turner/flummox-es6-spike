@@ -12,7 +12,9 @@ Not even tried to make it vaguely pretty.
 3. Enter the directory
 `cd flummox-es6-spike`
 4. Install all modules
+
 ```npm install
+
 node node_modules/jspm/jspm install```
 5. Start the server
 `node app/server/index.js`
