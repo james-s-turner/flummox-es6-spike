@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="">
+<head>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script >
+        System.config({
+            "baseURL" : "/"
+        })
+    </script>
+</head>
+<body>
+    <!-- Note: Lack of space between div and content is important -->
+    <div id="content"></div>
+
+    <script>
+        var content = document.getElementById("content");
+        System.import("app/browser/MyApp").then(function(module) {
+            var app = new module.MyApp();
+            app.start(content);
+        });
+
+
+    </script>
+
+</body>
+</html>vi

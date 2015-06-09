@@ -1,0 +1,8 @@
+body {
+  background-color: #f5f2f0; }
+
+input:invalid {
+  border: 1px solid red; }
+
+.HelloWorld {
+  background-color: yellow; }
