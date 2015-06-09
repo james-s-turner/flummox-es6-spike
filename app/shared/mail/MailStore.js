@@ -13,6 +13,7 @@ export class MailStore extends Store{
     }
 
     handleNewMessage(addressEntry){
+
         this.setState({
             addresses: this.state.addresses.concat([addressEntry]),
         });

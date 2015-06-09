@@ -1,12 +1,13 @@
 var System = require('systemjs');
-require('../../config');
+
 var Handlebars = require('handlebars');
 var fs = require('fs');
 
 var renderedLayout;
+/*
 System.import("app/server/Reactor").then(function(module){
-    //console.log("imported");
-    var reactor = new  module.Reactor();
+    console.log("MailApp Started");
+    //var reactor = new  module.Reactor();
     //var renderedComponent = reactor.serialize();
     var renderedComponent = "";
 
@@ -18,6 +19,14 @@ System.import("app/server/Reactor").then(function(module){
         content: renderedComponent
     });
 });
+*/
+
+var fileData = fs.readFileSync(__dirname + '/layout.handlebars').toString();
+var layoutTemplate = Handlebars.compile(fileData);
+var renderedLayout = layoutTemplate({
+    content: ""
+});
+
 
 var express = require('express');
 var app = express();

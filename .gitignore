@@ -17,3 +17,4 @@ Thumbs.db
 .gradle
 .settings
 node_modules
+jspm_packages

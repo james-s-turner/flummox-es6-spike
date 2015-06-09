@@ -19,7 +19,7 @@ System.config({
     "babel": "npm:babel-core@5.5.5",
     "babel-runtime": "npm:babel-runtime@5.5.5",
     "core-js": "npm:core-js@0.9.14",
-    "flummox": "npm:flummox@4.0.0-alpha2",
+    "flummox": "npm:flummox@3.5.2",
     "react": "npm:react@0.13.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -43,6 +43,12 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:amdefine@0.1.0": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "module": "github:jspm/nodelibs-module@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:amdefine@0.1.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
@@ -79,6 +85,14 @@ System.config({
     "npm:eventemitter3@0.1.6": {
       "process": "github:jspm/nodelibs-process@0.1.1",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:flummox@3.5.2": {
+      "eventemitter3": "npm:eventemitter3@0.1.6",
+      "flux": "npm:flux@2.0.3",
+      "object-assign": "npm:object-assign@2.0.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "uniqueid": "npm:uniqueid@0.1.0"
     },
     "npm:flummox@4.0.0-alpha2": {
       "eventemitter3": "npm:eventemitter3@0.1.6",
@@ -120,7 +134,7 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:source-map@0.1.31": {
-      "amdefine": "npm:amdefine@0.1.0",
+      "amdefine": "npm:amdefine@0.1.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"

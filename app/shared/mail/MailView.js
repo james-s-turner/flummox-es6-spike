@@ -10,7 +10,7 @@ export class MailView extends React.Component {
     }
 
     render() {
-
+        console.log("MailView");
         return (
 
             <div className="MailView">
@@ -20,7 +20,7 @@ export class MailView extends React.Component {
                     <input type="submit"/>
                 </form>
 
-                <FluxComponent connectToStores={'mail-store'} >
+                <FluxComponent connectToStores={'mail-store'}>
                     <ListView/>
                 </FluxComponent>
              </div>
@@ -30,8 +30,8 @@ export class MailView extends React.Component {
     _onSubmit(event){
         let emailAddress = this.refs.mailAddress.getDOMNode().value;
         if(emailAddress){
-            var actions = this.props.flux.getActions("messages");
-            actions.createMessage(emailAddress);
+            var actions = this.props.flux.getActions("mail-actions");
+            actions.createMailEntry(emailAddress);
         }
         event.preventDefault();
     }
