@@ -2,7 +2,7 @@ import chai from 'chai';
 let expect = chai.expect;
 import {MailFlux} from "../MailFlux";
 
-describe('Test mail flux', () =>  {
+describe('Test mail flux model', () =>  {
 
     it('creates email address entry in store', function() {
         let flux = new MailFlux();
