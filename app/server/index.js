@@ -1,32 +1,27 @@
 var System = require('systemjs');
+require('../../config.js');
+System.config({
+    "baseURL": ""
+})
 
 var Handlebars = require('handlebars');
 var fs = require('fs');
 
 var renderedLayout;
-/*
-System.import("app/server/Reactor").then(function(module){
+
+System.import("app/server/MailAppRenderer").then(function(module){
     console.log("MailApp Started");
-    //var reactor = new  module.Reactor();
-    //var renderedComponent = reactor.serialize();
-    var renderedComponent = "";
+    var renderer = new  module.MailAppRenderer();
+    var renderedComponent = renderer.doRender();
+//    renderedComponent = "";
 
     var fileData = fs.readFileSync(__dirname + '/layout.handlebars').toString();
-    //console.log(fileData);
     var layoutTemplate = Handlebars.compile(fileData);
 
     renderedLayout = layoutTemplate({
         content: renderedComponent
     });
 });
-*/
-
-var fileData = fs.readFileSync(__dirname + '/layout.handlebars').toString();
-var layoutTemplate = Handlebars.compile(fileData);
-var renderedLayout = layoutTemplate({
-    content: ""
-});
-
 
 var express = require('express');
 var app = express();

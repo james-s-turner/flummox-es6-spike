@@ -10,7 +10,7 @@ export class MailView extends React.Component {
     }
 
     render() {
-        console.log("MailView");
+
         return (
 
             <div className="MailView">

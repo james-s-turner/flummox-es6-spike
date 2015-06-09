@@ -11,12 +11,12 @@
 </head>
 <body>
     <!-- Note: Lack of space between div and content is important -->
-    <div id="content"></div>
+    <div id="content">{{{content}}}</div>
 
     <script>
         var content = document.getElementById("content");
-        System.import("app/browser/MyApp").then(function(module) {
-            var app = new module.MyApp();
+        System.import("app/browser/MailApp").then(function(module) {
+            var app = new module.MailApp();
             app.start(content);
 
         });

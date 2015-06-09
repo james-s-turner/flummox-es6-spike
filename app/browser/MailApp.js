@@ -4,7 +4,7 @@ import {MailView} from '../shared/mail/MailView';
 import FluxComponent from 'flummox/component';
 //import './style.css!';
 
-export class MyApp {
+export class MailApp {
 
     start(rootElement){
         let flux = new MailFlux();
