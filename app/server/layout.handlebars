@@ -8,15 +8,19 @@
             "baseURL" : "/"
         })
     </script>
+
 </head>
 <body>
     <!-- Note: Lack of space between div and content is important -->
     <div id="content">{{{content}}}</div>
 
     <script>
+        var json = '{{{storeState}}}';
+        var storeState = JSON.parse(json);
+
         var content = document.getElementById("content");
         System.import("app/browser/MailApp").then(function(module) {
-            var app = new module.MailApp();
+            var app = new module.MailApp(storeState);
             app.start(content);
 
         });

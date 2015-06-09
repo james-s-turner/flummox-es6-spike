@@ -17,7 +17,16 @@ export class MailAppRenderer {
             </FluxComponent>
         );
 
+        let store = flux.getStore("mail-store");
+        this.serialized = JSON.stringify(store.state);
+
         return  result;
     }
+
+    toJSON(){
+        return this.serialized;
+    }
+
+
 
 }

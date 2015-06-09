@@ -19,7 +19,8 @@ System.import("app/server/MailAppRenderer").then(function(module){
     var layoutTemplate = Handlebars.compile(fileData);
 
     renderedLayout = layoutTemplate({
-        content: renderedComponent
+        content: renderedComponent,
+        storeState : renderer.toJSON()
     });
 });
 

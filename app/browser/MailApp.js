@@ -6,8 +6,15 @@ import FluxComponent from 'flummox/component';
 
 export class MailApp {
 
+    constructor(storeState){
+        this.storeState = storeState;
+    }
+
     start(rootElement){
         let flux = new MailFlux();
+        let mailStore = flux.getStore("mail-store");
+        mailStore.setState(this.storeState);
+
         React.render(
             <FluxComponent flux={flux} connectToStores={'mail-store'}>
                 <MailView/>
