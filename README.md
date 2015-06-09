@@ -11,12 +11,11 @@ Not even tried to make it vaguely pretty.
 `git clone git@github.com:james-s-turner/flummox-es6-spike.git`
 3. Enter the directory
 `cd flummox-es6-spike`
-4. Install all modules
-```npm install
-node node_modules/jspm/jspm install```
-5. Start the server
+4. Install node modules `npm install`
+5. Install JSPM modules node node_modules/jspm/jspm install`
+6. Start the server
 `node app/server/index.js`
-6. Open your browser, go to "http:localhost:3000"
+7. Open your browser, go to "http:localhost:3000"
 
 # TODO
 Lots
