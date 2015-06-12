@@ -1,3 +1,7 @@
-input:invalid{
+.MailVew-input {
+  margin: 5px;
+}
+
+.MailVew-input:invalid{
   border: 1px solid red;
 }

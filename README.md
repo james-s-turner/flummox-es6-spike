@@ -14,9 +14,9 @@ Not even tried to make it vaguely pretty.
 4. Install node modules `npm install`
 6. Start the server
 `npm start`
-`You should see the following:
-Listening on port 3000`
-MailApp Started
+You should see the following:
+`Listening on port 3000`
+`MailApp Started`
 7. Open your browser, go to "http:localhost:3000"
 
 # Testing

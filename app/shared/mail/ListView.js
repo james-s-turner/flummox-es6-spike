@@ -6,8 +6,8 @@ export class ListView extends React.Component {
         var lines = this.props.addresses.map( address => <div key={address.emailAddress}>{address.emailAddress}</div> );
         return (
             <div className="ListView">
-                <h2>Email Addresses</h2>
-                <div className="ListView">{lines}</div><br/>
+                <h2  className="ListView-title">Email Addresses</h2>
+                <div className="ListView-line">{lines}</div><br/>
             </div>
         );
     }
