@@ -1,3 +1,5 @@
 require("babel/register");
 var System = require("systemjs");
-require("./MailApp");
+var MailApp = require("./MailApp");
+//var app = new MailApp();
+console.log("MailApp Loaded");

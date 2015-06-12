@@ -3,7 +3,7 @@ let expect = chai.expect;
 import {MailFlux} from "../MailFlux";
 
 describe('Test mail flux model', () =>  {
-
+debugger;
     it('creates email address entry in store', function() {
         let flux = new MailFlux();
         let actions = flux.getActions("mail-actions");
