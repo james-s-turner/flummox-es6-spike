@@ -1,5 +1,5 @@
 language: node_js
 node_js:
   - stable
-before_scripts:
-  jspm registry config github
+before_script:
+  - jspm registry config github
