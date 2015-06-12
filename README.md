@@ -13,14 +13,13 @@ Not even tried to make it vaguely pretty.
 `cd flummox-es6-spike`
 4. Install node modules `npm install`
 6. Start the server
-`npm start
-`
+`npm start`
 You should see the following:
-```
+`
 Listening on port 3000
 MailApp Started
-```
-7. Open your browser, go to "http:localhost:3000"
+`
+7. Open your browser, go to "http://localhost:3000"
 
 # Testing
 `npm test`
