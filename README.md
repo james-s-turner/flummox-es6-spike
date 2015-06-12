@@ -17,5 +17,8 @@ Not even tried to make it vaguely pretty.
 `node app/server/index.js`
 7. Open your browser, go to "http:localhost:3000"
 
+# Testing
+`npm test`
+
 # TODO
 Lots
