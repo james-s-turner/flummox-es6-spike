@@ -1,5 +1,9 @@
 language: node_js
 node_js:
-  -  stable
-before_script:
-  -  jspm registry config github
+- stable
+before_install:
+  - npm install jspm
+  - node_modules/jspm/jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+env:
+  global:
+    secure: WvjI+isAKPY4R2OZ7Oi6+4m86LCNPSOrdh6nSrYPBgcCCLSRuzZqAvLEJHMMS3oh1VBVNw36ZpnwOBh9oCCYmKA6RcPPsb55i0BfrO/0zTUf2rWi+Dbsc6YBm4/CWNELGU8jCowvL4XQmI+ewubgIEwMaYT5V0YrNO3jMbbC+F/j4PTutPezSGrA7HChalhY9MXqTXhN6Szbn5hoywc4SXK94yNsnBoGEq086gnuYcTiVE1KkDdwQgGq0e5s5swawMZXNdtPjjme5GC4ivdxgZFanSpARFLYAw3A6Fo39F58Krl5pxHEAz19wfUjSgxzY9M9YdXGNNdytSaj59bkNNg0E0mmQ77fro7csNjEX7dm1Zg0nLtsLGEEFBwDgW1eS7eUt8kH3u1f4/ja+pr42JA9sF562FI/+C9sHkJFLHxbTaQXM5F3+EqMEquCYnkJOFbEP+FS0MVdtMd4SFs8UQIJAZ4fneqNdDaFMQAHnBLLbHdamfeSFDFx3jqjma0jvVdug0qmdagz7jSsGjr2/uzWN1ojCG2J5a05NQyZI6OxO3JJRngGGOCI1dZK6bLtDokKwQUeJY0jz3MazFG1eN4xN2BzZoyR/MAbEQEh2lbkfzzLvwy6Pb7Hy9MOeqhTeP+QXVruYKKO9hkKwwp4pmUw6aFFjkAui9KKkqa9Iy8=
