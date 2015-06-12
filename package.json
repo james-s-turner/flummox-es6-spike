@@ -4,7 +4,9 @@
   "description": "a small spike",
   "main": "index.js",
   "scripts": {
-    "test": "./runTests.sh"
+    "test": "./runTests.sh",
+    "start" : "node app/server/index",
+    "postinstall" : "node node_modules/jspm/jspm install"
   },
   "repository": {
     "type": "git",
