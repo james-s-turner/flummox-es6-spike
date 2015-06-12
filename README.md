@@ -12,13 +12,17 @@ Not even tried to make it vaguely pretty.
 3. Enter the directory
 `cd flummox-es6-spike`
 4. Install node modules `npm install`
-5. Install JSPM modules `node node_modules/jspm/jspm install`
 6. Start the server
-`node app/server/index.js`
+`npm serve`
+`You should see the following:
+Listening on port 3000`
+MailApp Started
 7. Open your browser, go to "http:localhost:3000"
 
 # Testing
 `npm test`
 
 # TODO
-Lots
+Make prettier
+Run tests in travis
+

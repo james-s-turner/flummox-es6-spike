@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./runTests.sh",
-    "start" : "node app/server/index",
+    "serve" : "node app/server/index",
     "postinstall" : "node node_modules/jspm/jspm install"
   },
   "repository": {
