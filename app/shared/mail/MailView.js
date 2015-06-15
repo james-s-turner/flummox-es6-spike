@@ -17,10 +17,10 @@ export class MailView extends React.Component {
             <div className="MailView">
 
             <form onSubmit={this._onSubmit}>
-                    <label className="MailView-label" htmlFor="email1" title="email" >Email Address</label >
-                    <input className="MailView-input" name="email1" type='email' autoFocus="autofocus" title="Enter an Email address" ref="mailAddress"/>
-                    <input className="MailView-submit"type="submit"/>
-                </form>
+                <label className="MailView-label" htmlFor="email1" title="email" >Email Address</label >
+                <input className="MailView-input" name="email1" type='email' autoFocus="autofocus" title="Enter an Email address" ref="mailAddress"/>
+                <button className="MailView-submit">Add</button>
+            </form>
 
                 <FluxComponent connectToStores={'mail-store'}>
                     <ListView/>

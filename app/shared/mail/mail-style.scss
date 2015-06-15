@@ -1,7 +1,19 @@
-.MailVew-input {
+.MailView-input {
   margin: 5px;
 }
 
-.MailVew-input:invalid{
+.MailView-input:invalid{
   border: 1px solid red;
+}
+
+.MailView-label {
+  margin: 5px;
+}
+
+.ListView-row--odd {
+  background-color: #E4EEF5;
+}
+
+.ListView-row--even {
+  background-color: #BEEBF5;
 }
