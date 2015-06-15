@@ -6,25 +6,25 @@ I've only developed it on OSX and run against latest chrome.
 Not even tried to make it vaguely pretty.
 
 # Installing and running
-1. Install node. see https://nodejs.org/download/
-2. Clone the repository
+* Install node. see https://nodejs.org/download/
+* Clone the repository
 `git clone git@github.com:james-s-turner/flummox-es6-spike.git`
-3. Enter the directory
+* Enter the directory
 `cd flummox-es6-spike`
-4. Install node modules `npm install`
-6. Start the server
+* Install node modules `npm install`
+* Start the server
 `npm start`
 You should see the following:
 ```
 Listening on port 3000
 MailApp Started
 ```
-7. Open your browser, go to "http://localhost:3000"
+* Open your browser, go to "http://localhost:3000"
 
 # Testing
 `npm test`
 
 # TODO
-Make prettier
 Run tests in travis
+Production build, using the SystemJS build tool. Awaiting a fix to: https://github.com/systemjs/builder/issues/90
 

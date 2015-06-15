@@ -2,7 +2,7 @@ var System = require('systemjs');
 require('../../config.js');
 System.config({
     "baseURL": ""
-})
+});
 
 var Handlebars = require('handlebars');
 var fs = require('fs');
@@ -27,7 +27,6 @@ System.import("app/server/MailAppRenderer").then(function(module){
 var express = require('express');
 var app = express();
 app.use('/jspm_packages', express.static('jspm_packages'));
-app.use('/lib', express.static('lib'));
 app.use('/config.js', express.static('config.js'));
 app.use('/app', express.static('app'));
 
