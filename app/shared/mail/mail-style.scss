@@ -1,3 +1,5 @@
+@import "../../common";
+
 .MailView-input {
   margin: 5px;
 }
@@ -11,9 +13,9 @@
 }
 
 .ListView-row--odd {
-  background-color: #E4EEF5;
+  background-color: lighten($base-back-color, 2%);
 }
 
 .ListView-row--even {
-  background-color: #BEEBF5;
+  background-color: darken($base-back-color, 2%);
 }
