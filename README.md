@@ -22,9 +22,11 @@ MailApp Started
 * Open your browser, go to "http://localhost:3000"
 
 # Testing
-`npm test`
+* `npm test`
 
 # TODO
-Run tests in travis
-Production build, using the SystemJS build tool. Awaiting a fix to: https://github.com/systemjs/builder/issues/90
+* Run tests in travis.
+* Production build, using the SystemJS build tool. Awaiting a fix to: https://github.com/systemjs/builder/issues/90
+* Add libsass to build. Relying on using SASS from webstorm at the moment
+* Add autoprefixer to build
 
