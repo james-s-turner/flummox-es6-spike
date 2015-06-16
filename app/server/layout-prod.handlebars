@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="">
+<head>
+    <title>Mail Address App (production build)</title>
+    <script src="mail-address-app.js"></script>
+</head>
+<body>
+    <div id="content">{{{content}}}</div>
+    <script>
+        var json = '{{{storeState}}}';
+        var storeState = JSON.parse(json);
+        var app = new window.MailApp(storeState);
+
+        var content = document.getElementById("content");
+        app.start(content);
+    </script>
+</body>
+</html>
