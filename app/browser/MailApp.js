@@ -7,6 +7,7 @@ import './app-style.css!';
 export class MailApp {
 
     constructor(storeState){
+
         this.storeState = storeState;
     }
 
@@ -26,4 +27,8 @@ export class MailApp {
     }
 
 
+}
+//Nasty hack to make this class available to the home page so it can be bootstrapped
+if(typeof window  != "undefined") {
+    window.MailApp = MailApp;
 }

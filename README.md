@@ -24,9 +24,14 @@ MailApp Started
 # Testing
 * `npm test`
 
+# Production
+* Generate the production bundle and source maps.
+* `node build`
+*  Open your browser, go to "http://localhost:3000/?mode=prod"
+
 # TODO
 * Run tests in travis.
-* Production build, using the SystemJS build tool. Awaiting a fix to: https://github.com/systemjs/builder/issues/90
 * Add libsass to build. Relying on using SASS from webstorm at the moment
 * Add autoprefixer to build
+* Upgrade so systemjs 0.17.*
 

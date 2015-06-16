@@ -18,3 +18,7 @@ Thumbs.db
 .settings
 node_modules
 jspm_packages
+
+#built files
+mail-address-app.js
+mail-address-app.js.map
